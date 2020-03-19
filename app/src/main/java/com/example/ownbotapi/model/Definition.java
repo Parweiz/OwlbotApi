@@ -1,4 +1,3 @@
-
 package com.example.ownbotapi.model;
 
 import com.google.gson.annotations.Expose;
@@ -17,34 +16,10 @@ public class Definition {
     private Object example;
     @SerializedName("image_url")
     @Expose
-    private String imageUrl;
+    private Object imageUrl;
     @SerializedName("emoji")
     @Expose
     private Object emoji;
-
-    /**
-     * No args constructor for use in serialization
-     * 
-     */
-    public Definition() {
-    }
-
-    /**
-     * 
-     * @param emoji
-     * @param imageUrl
-     * @param definition
-     * @param type
-     * @param example
-     */
-    public Definition(String type, String definition, Object example, String imageUrl, Object emoji) {
-        super();
-        this.type = type;
-        this.definition = definition;
-        this.example = example;
-        this.imageUrl = imageUrl;
-        this.emoji = emoji;
-    }
 
     public String getType() {
         return type;
@@ -70,11 +45,11 @@ public class Definition {
         this.example = example;
     }
 
-    public String getImageUrl() {
+    public Object getImageUrl() {
         return imageUrl;
     }
 
-    public void setImageUrl(String imageUrl) {
+    public void setImageUrl(Object imageUrl) {
         this.imageUrl = imageUrl;
     }
 
@@ -85,5 +60,4 @@ public class Definition {
     public void setEmoji(Object emoji) {
         this.emoji = emoji;
     }
-
 }
