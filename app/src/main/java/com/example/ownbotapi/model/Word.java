@@ -1,4 +1,3 @@
-
 package com.example.ownbotapi.model;
 
 import java.util.List;
@@ -9,33 +8,13 @@ public class Word {
 
     @SerializedName("definitions")
     @Expose
-    private static List<Definition> definitions = null;
+    private List<Definition> definitions = null;
     @SerializedName("word")
     @Expose
     private String word;
     @SerializedName("pronunciation")
     @Expose
     private String pronunciation;
-
-    /**
-     * No args constructor for use in serialization
-     * 
-     */
-    public Word() {
-    }
-
-    /**
-     * 
-     * @param pronunciation
-     * @param definitions
-     * @param word
-     */
-    public Word(List<Definition> definitions, String word, String pronunciation) {
-        super();
-        this.definitions = definitions;
-        this.word = word;
-        this.pronunciation = pronunciation;
-    }
 
     public List<Definition> getDefinitions() {
         return definitions;

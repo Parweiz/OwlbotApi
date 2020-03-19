@@ -70,9 +70,9 @@ public class MainActivity extends AppCompatActivity {
     public void fakeWords() {
 
 
-        Definition definition = new Definition("noun", "test def", "a lion stands ready to attack",
-                "https://media.owlbot.info/dictionary/images/ooooow.jpg.400x400_q85_box-23,22,478,477_crop_detail.jpg",
-                "");
+//        Definition definition = new Definition("noun", "test def", "a lion stands ready to attack",
+//                "https://media.owlbot.info/dictionary/images/ooooow.jpg.400x400_q85_box-23,22,478,477_crop_detail.jpg",
+//                "");
 
         List<Definition> definitions;
 
